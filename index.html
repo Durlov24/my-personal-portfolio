@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db11ffbcb2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img id="logo-image" src="/images/Screenshot 2024-03-18 214929_prev_ui.png" alt="">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i id="fas" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i id="fas" class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-container">
+                    <div class="header-text">
+                        <p>MERN Stack Web Developer & <br> UI/UX,GIS Map Designer</p>
+                        <h1>Hi, I'm Maksudul <br> Amin <span>Durlov</span></h1>
+                        <a href="/images/Maksudul's Resume.pdf" download class="btn2">Download My Resume</a>
+                    </div>
+                    <div><img class="image" src="/images/About.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- --------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="/images/About.jpg" alt="">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello!
+                        I am Md. Maksudul Amin Talukder and I'm currently embarking on an exciting journey as an
+                        undergraduate student at Jatiya Kabi Kazi Nazrul Islam University, majoring in 🏞️
+                        Environmental Science and Engineering🌍. My passion lies at the intersection of technology
+                        and sustainability, driving me to explore innovative solutions to environmental challenges.
+                        With a keen interest in both the natural world and digital innovation, I am dedicated to
+                        finding sustainable solutions through interdisciplinary approaches.</p>
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Technology
+                        </p>
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Design Web/App interface.</li>
+                            <li><span>Web Development</span> <br>Full Stack Web app development.</li>
+                            <li><span>GIS (Geographic Information
+                                    System)
+                                    Modeling</span> <br>Modeling & highly interested to develop features
+                                of these applications.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>Front-End-Development/UI/UX design/Client-side
+                                </span><br>HTML5 CSS3 Javascipt Angular Vue React Redux Bootstrap
+                                Talwind API
+                            </li>
+                            <li><span>Back-End-Development/Server-side</span> <br>Node.js Express.js MongoDB MySQL Spark
+                                HTTP/2 </li>
+                            <li><span>GIS Modeling</span> <br>Illustrator ArcGis QGIS ArcTools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2022-Current</span> <br> Pupil at ProgramingHero</li>
+                            <li><span>2019-Current</span> <br>Undergraduate B.Sc Engineering Student.<br> Department of
+                                🌍Environmental Science & Engineering. <br> Jatiya Kabi Kazi Nazrul Islam University.
+                                <br>
+                            </li>
+                            <li><span>SSC & HSC</span> <br> Agricultural University College,Mymensingh. <br> Passing
+                                year:
+                                2019<br>Jalsshuka Kumudgonj High School <br> Passing year: 2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ------------------services----------- -->
+    <div id="services">
+        <div class="service-container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Web Development</h2>
+                    <p>Offering full stack web development expertise, I provide end-to-end solutions for your digital
+                        needs. From designing intuitive user interfaces to implementing robust backend systems, I ensure
+                        your website or web application is both functional and user-friendly. With proficiency in
+                        front-end technologies like HTML, CSS, and JavaScript, coupled with backend frameworks such as
+                        Node.js and Django, I deliver dynamic and scalable web experiences tailored to your requirements
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web & App UI/UX Design</h2>
+                    <p>In the realm of webpage design, UI/UX design takes center stage, ensuring seamless user
+                        experiences that captivate and engage. Through strategic layout, intuitive navigation, and
+                        visually compelling elements, we craft digital spaces that not only showcase your brand but also
+                        resonate with your audience. From wireframing to prototyping and final execution, we specialize
+                        in translating your vision into impactful online experiences that leave a lasting impression.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>GIS Modeling</h2>
+                    <p>In the world of GIS modeling, we leverage industry-leading tools like ArcGIS, QGIS, and ArcTools
+                        to analyze spatial data and unlock valuable insights. Whether it's mapping environmental
+                        patterns, optimizing logistics routes, or assessing risk factors, our expertise in geospatial
+                        analysis empowers decision-making and drives actionable outcomes. From custom script development
+                        to sophisticated spatial modeling techniques, we tailor solutions to meet your specific needs,
+                        delivering accurate, scalable, and impactful results that drive your projects forward</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="portfolio-container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Search the repository & view the project</p>
+                        <a href="https://github.com/Durlov24"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Search the repository & view the project</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Search the repository & view the project</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------Contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> <Span id="res-email">maksudulamindurlov@gmail.com</Span>
+                    </p>
+                    <p><i class="fa-solid fa-phone"></i><span id="res-phone">+8801301387646</span></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009116010986&mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/md-maksudul-amin-talukder-095a152a8"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/Durlov24"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.instagram.com/durlovmaksudul?utm_source=qr&igsh=bnF2NmhycXRvN3Vx"><i
+                                class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://x.com/TaskinDurlov?t=ETepxw6vg_xvBvx9ghIrIQ&s=35"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="/images/Maksudul's Resume.pdf" download class="btn2">Download Resume</a>
+                    <a href="/images/Maksudul's Resume.pdf" download class="btn2">Google Dive link</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Alert. All credit goes to Maksudul Amin Durlov</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-content')
+        function opentab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link')
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <!-- new script -->
+    <script>
+        var sideMenu = document.getElementById('sidemenu')
+        function openmenu() {
+            sideMenu.style.right = '0';
+        }
+        function closemenu() {
+            sideMenu.style.right = '-200px';
+        }
+    </script>
+
+    <!-- google sheet -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCc3rlkUJy5Zzo-tXQnve-bxsB-IVA_s8ukMKq3_BA9ppXN_1gd64d4rs4PkjDuNsw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = '';
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
